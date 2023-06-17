@@ -12,7 +12,7 @@ const Login = () =>{
     return (
         <div className="Login">
             <form action="" onSubmit={LoginUser}>
-            {user && <h2>Welcome back! {user["username"]}</h2>}
+            <h1 style={{textAlign:'center'}}>Log In</h1>
                 <input type="text" name="username" id="" onChange={(e) =>{setUsername(e.target.value)}} value={usname} placeholder="Enter Username" />
                 <br />
                 <input type="password" name="password" id="" onChange={(e)=>{setPassword(e.target.value)}} value={password} placeholder="Enter Password" />
